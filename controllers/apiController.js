@@ -31,8 +31,8 @@ module.exports = function(app) {
             })
         } else {
             var newTodo = Todos({
-                username: 'bobby',
-                todo: 'Take a little step',
+                username: req.body.uname,
+                todo: req.body.todo,
                 isDone: req.body.isDone,
                 hasAttachment: req.body.hasAttachment
             });
